@@ -26,6 +26,9 @@ def replace_with_json(oldfile, newfile, jsonfile):
 
     print("Starting procedure.\n")
 
+    # if first is true, only replacing old file
+    # then replacing new file to have every
+    # change in one file
     first = True
     with open(jsonfile) as file:
         data = json.load(file)
