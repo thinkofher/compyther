@@ -1,11 +1,23 @@
 from compythertools import replace_word, marker
+import json
+
 
 oldfile = 'sample\\sample.tex'
 newfile = 'output.tex'
 
-replace_word(
-    'sample\\sample.tex', newfile,
-    marker('Beniamin'), 'Marek świętokrzyski'
-    )
-replace_word('output.tex', 'output.tex', marker('sierść'), 'Ćma sobie lata')
-replace_word('output.tex', 'output.tex', marker('typ_rur'), 'Rura-5000')
+first = True
+with open('data.json') as file:
+    data = json.load(file)
+
+for word in data['words']:
+    old_word = word['old_word']
+    new_word = word['new_word']
+    if first:
+        replace_word(oldfile, newfile, marker(old_word), new_word)
+        first = False
+        print(word['old_word'], '-->', word['new_word'])
+    else:
+        replace_word(newfile, newfile, marker(old_word), new_word)
+        print(word['old_word'], '-->', word['new_word'])
+
+print("Done!")
