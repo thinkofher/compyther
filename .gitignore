@@ -1,5 +1,13 @@
+# Visual Studio Code
 /.vscode
+
+#
+*.pyc
+
+# to only keep sample, withut all trash from latex
 /sample
 !/sample/sample.tex
+
+# other
 desktop.ini
 output.tex

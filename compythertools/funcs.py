@@ -11,8 +11,3 @@ def replace_word(infile, old_word, new_word):
     fileWrite = open('output.tex', 'w', encoding='utf-8')
     temporaryFile = fileRead.replace(old_word, new_word)
     fileWrite.write(temporaryFile)
-
-
-replace_word('sample\\sample.tex', '<:Beniamin:>', 'Marek świętokrzyski')
-replace_word('output.tex', '<:sierść:>', 'Ćma sobie lata')
-replace_word('output.tex', '<:typ_rur:>', 'Rura-5000')
