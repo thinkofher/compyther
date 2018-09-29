@@ -11,3 +11,7 @@ def replace_word(infile, newfile, old_word, new_word):
     fileWrite = open(newfile, 'w', encoding='utf-8')
     temporaryFile = fileRead.replace(old_word, new_word)
     fileWrite.write(temporaryFile)
+
+
+def marker(word):
+    return '<:' + word + ':>'
