@@ -1,7 +1,7 @@
 # Visual Studio Code
 /.vscode
 
-#
+# because of __pycache__
 *.pyc
 
 # to only keep sample, withut all trash from latex
