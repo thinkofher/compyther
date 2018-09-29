@@ -4,6 +4,10 @@ import json
 
 
 def replace_word(infile, newfile, old_word, new_word):
+    '''
+    Reading old file and replacing all old words 
+    with new word, then saving it in newfile.
+    '''
     if not os.path.isfile(infile):
         print("Error on replace_word, not a regular file: "+infile)
         sys.exit(1)
@@ -19,11 +23,18 @@ def replace_word(infile, newfile, old_word, new_word):
 
 
 def marker(word):
+    '''
+    Function for adding variable works for word
+    to be replaced.
+    '''
     return '<:' + word + ':>'
 
 
 def replace_with_json(oldfile, newfile, jsonfile):
-
+    '''
+    Replacing all words from oldfile and saving it in
+    new file. Reading words from jsonfile.
+    '''
     print("Starting procedure.\n")
 
     # if first is true, only replacing old file
