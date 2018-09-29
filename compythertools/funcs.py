@@ -5,7 +5,7 @@ import json
 
 def replace_word(infile, newfile, old_word, new_word):
     '''
-    Reading old file and replacing all old words 
+    Reading old file and replacing all old words
     with new word, then saving it in newfile.
     '''
     if not os.path.isfile(infile):
