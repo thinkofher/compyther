@@ -1,3 +1,3 @@
-from compythertools.funcs import replace_word, marker
+from compythertools.funcs import replace_with_json
 
-__all__ = [replace_word, marker]
+__all__ = [replace_with_json]
