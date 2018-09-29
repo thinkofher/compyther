@@ -1,1 +1,3 @@
 /.vscode
+/sample
+!/sample/sample.tex
