@@ -4,6 +4,12 @@
 # because of __pycache__
 *.pyc
 
+# latex file
+*.aux
+*.log
+*.pdf
+*.gz
+
 # to only keep sample, withut all trash from latex
 /sample
 !/sample/sample.tex
