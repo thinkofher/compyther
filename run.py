@@ -1,6 +1,7 @@
 from compythertools import replace_with_json
+from pathlib import Path
 
-oldfile = 'sample\\sample.tex'
-newfile = 'output.tex'
+oldfile = Path('sample/sample.tex')
+newfile = Path('output.tex')
 
 replace_with_json(oldfile, newfile, 'data.json')
