@@ -7,7 +7,9 @@ from compythertools.funcs import replace_with_json
 class TestStringMethods(unittest.TestCase):
 
     def test_jsonfile(self):
-
+        '''
+        Testing replace_with_json function with sample data.
+        '''
         self._sampleInput = Path('tests/samplefiles/sample_input.txt')
         self._sampleOutput = Path('tests/samplefiles/sample_output.txt')
         self._sampleJson = Path('tests/samplefiles/sample_data.json')
