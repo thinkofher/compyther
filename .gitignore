@@ -12,7 +12,11 @@
 
 # to only keep sample, withut all trash from latex
 /sample
+/output/output.tex
 !/sample/sample.tex
+
+# test
+/tests/samplefiles/test_output.txt
 
 # other
 desktop.ini

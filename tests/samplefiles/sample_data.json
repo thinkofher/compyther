@@ -1,0 +1,17 @@
+{
+    "words":
+    {
+        "test1":{
+            "old_word": "word1",
+            "new_word": "fifth"
+        },
+        "test2":{
+            "old_word": "word2",
+            "new_word": "intent"
+        },
+        "test3":{
+            "old_word": "word3",
+            "new_word": "England"
+        }
+    }
+}
