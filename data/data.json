@@ -1,24 +1,25 @@
 {
-    "words":[
-        {
+    "words":
+    {
+        "word1":{
             "old_word": "Beniamin",
             "new_word": "Mareczek"
         },
-        {
+        "word2":{
             "old_word": "sierść",
             "new_word": "Ćma sobie lata"
         },
-        {
+        "word3":{
             "old_word": "typ_rur",
             "new_word": "Rura-6000"
         },
-        {
+        "word4":{
             "old_word": "nowy",
             "new_word": "kupeczkuśka"
         },
-        {
+        "word5":{
             "old_word": "niespodzianka",
             "new_word": "Matka Boska"
         }
-    ]
+    }
 }
