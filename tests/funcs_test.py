@@ -2,6 +2,7 @@ import unittest
 from pathlib import Path
 
 from compythertools.funcs import replace_with_json
+from compythertools.funcs import marker
 
 
 class TestStringMethods(unittest.TestCase):
@@ -28,6 +29,22 @@ class TestStringMethods(unittest.TestCase):
                 file1.read(),
                 file2.read()
             )
+
+    def test_marker(self):
+        '''
+        Testing marker function.
+        '''
+
+        self._unmarkedStrings = [
+            'Winter', 'Spring', 'Summer', 'Autumn'
+        ]
+        self._markeredStrings = [
+            '<:Winter:>', '<:Spring:>', '<:Summer:>', '<:Autumn:>'
+        ]
+        self.assertEquals(
+            self._markeredStrings,
+            list(map(marker, self._unmarkedStrings))
+        )
 
 
 if __name__ == '__main__':
